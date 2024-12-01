@@ -1,0 +1,207 @@
+/* Skills Section */
+.skills-section {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 41px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill h3 {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 1s ease;
+}
+
+.skill:hover h3 {
+  color: #007bff;
+}
+
+.skill:hover .progress-bar {
+  width: 100%;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-section form:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-section {
+      padding: 60px 20px;
+  }
+
+  .skills-section h2 {
+      font-size: 2rem;
+  }
+
+  .skill h3 {
+      font-size: 18px;
+  }
+
+  .contact-section {
+      padding: 60px 20px;
+  }
+
+  .contact-section form {
+      max-width: 90%;
+  }
+
+  button {
+      padding: 12px 25px;
+  }
+}
+
+/* Tablet and Mobile View */
+@media (max-width: 768px) {
+  .skills-section {
+      padding: 50px 10px;
+  }
+
+  .skills-section h2 {
+      font-size: 1.8rem;
+  }
+
+  .skill h3 {
+      font-size: 16px;
+  }
+
+  .progress-bar {
+      height: 15px;
+  }
+
+  .contact-section {
+      padding: 50px 10px;
+  }
+
+  .contact-section form {
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  .form-group {
+      margin-bottom: 15px;
+  }
+
+  button {
+      padding: 12px 22px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .skills-section {
+      padding: 40px 10px;
+  }
+
+  .skills-section h2 {
+      font-size: 1.6rem;
+  }
+
+  .skill h3 {
+      font-size: 14px;
+  }
+
+  .progress-bar {
+      height: 12px;
+  }
+
+  .contact-section {
+      padding: 40px 10px;
+  }
+
+  .contact-section form {
+      padding: 10px;
+  }
+
+  .form-group {
+      margin-bottom: 10px;
+  }
+
+  button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  footer {
+      font-size: 12px;
+  }
+}

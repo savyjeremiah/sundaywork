@@ -1,0 +1,200 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: rgb(20, 8, 30); 
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  padding: 20px;
+  flex-direction: column;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;  /* Side-by-side layout */
+  align-items: center;
+  gap: 20px;
+  text-align: left;  /* Align text left */
+  flex-direction: row;  /* Default: horizontal layout */
+}
+
+.circle {
+  width: 250px;
+  height: 320px;
+  border-radius: 10%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; 
+  margin-top: -20%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.circle:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bio {
+  max-width: 600px;
+  text-align: left;
+}
+
+.bio h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.bio .name {
+  color: #007bff;
+  font-style: italic;
+}
+
+.bio p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.bio p strong {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill h3 {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 1s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for skill bars */
+.skill:hover h3 {
+  color: #007bff;
+}
+
+.skill:hover .progress-bar {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .profile {
+      flex-direction: column;  /* Stack profile and text vertically on smaller screens */
+      text-align: center;
+  }
+
+  .circle {
+      width: 200px;
+      height: 250px;
+      transition: width 0.3s ease, height 0.3s ease;
+  }
+
+  .bio h1 {
+      font-size: 2em;
+  }
+
+  .bio p {
+      font-size: 1em;
+  }
+
+  .skills-section h2 {
+      font-size: 1.8rem;
+  }
+
+  .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+  }
+
+  .skill h3 {
+      font-size: 18px;
+  }
+
+  .progress {
+      height: 15px;
+  }
+
+  .progress-bar {
+      transition: width 1s ease;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+      width: 150px;
+      height: 200px;
+      transition: width 0.3s ease, height 0.3s ease;
+  }
+
+  .bio h1 {
+      font-size: 1.5em;
+  }
+
+  .bio p {
+      font-size: 0.9em;
+  }
+
+  .skills-section h2 {
+      font-size: 1.5rem;
+  }
+
+  .skills {
+      grid-template-columns: 1fr;
+  }
+
+  .skill h3 {
+      font-size: 16px;
+  }
+
+  .progress {
+      height: 12px;
+  }
+
+  .progress-bar {
+      transition: width 1s ease;
+  }
+}
